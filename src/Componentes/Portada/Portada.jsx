@@ -40,6 +40,7 @@ function Portada() {
          
         </Carousel.Item>
       </Carousel>
+    
     </div>
   );
 }

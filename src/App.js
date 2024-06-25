@@ -13,7 +13,8 @@ import Footer from './Componentes/Footer/Footer';
 import AboutUs from './Componentes/AboutUs/AboutUs';
 import ScrollToTopButton from './Componentes/ScrollToTopButton/ScrollToTopButton';
 import ReactGA from 'react-ga';
-
+import logo from '../src/img/logo.jpeg';
+import style from './App.module.css';
 function App() {
   const pageTitle = "Estilos Pinturas - Venta de Latex y Membranas";
   
@@ -33,6 +34,13 @@ function App() {
       <NavBar />
       <div id="home">
         <Portada />
+      </div>
+      <div className={style.containerimgApp} >
+      <img 
+            className={style.imgApp}
+            src={logo}
+            alt="Third slide"
+          />
       </div>
       <div id="como-trabajo">
         <ComoTrabajo />
