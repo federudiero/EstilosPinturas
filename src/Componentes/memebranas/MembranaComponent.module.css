@@ -114,7 +114,7 @@ p {
   }
 
   .latexItem {
-    max-width: 100%;
+    max-width: 80%;
     min-height: 300px; /* Ajuste de altura mínima para pantallas pequeñas */
   }
 

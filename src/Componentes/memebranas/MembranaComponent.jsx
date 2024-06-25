@@ -24,6 +24,9 @@ function MembranaComponent() {
     };
   }, []);
 
+const textoMembranaLiquida = 'Está formulada para solucionar problemas de filtraciones, goteras y humedad, tanto en techos como en terrazas y superficies porosas, tejas, etc. Rendimiento: 30m² por 3 manos';	
+const textoMemebranaPasta ='Membrana por 20 litros. Emulsiones acrílicas de alta calidad (protección UV) recomendada para lograr óptimos resultados en reparaciones de techos y muros. Rendimiento: 25/30m² por 3 manos ,La resistencia al agua se logra 48 horas después de su aplicación'
+
   return (
     <div className={style.divContainerPadreLatex}>
       <h2 className={style.title}>Membranas</h2>
@@ -36,8 +39,8 @@ function MembranaComponent() {
             <img className={style.imgLatex} src={img1} alt="Membrana en pasta" />
           </div>
           <h3>Membrana en pasta</h3>
-          <p>Membrana por 20 litros. Está formulada para solucionar problemas de filtraciones, goteras y humedad, tanto en techos como en terrazas y superficies porosas, tejas, etc.</p>
-          <p>Rendimiento: 30m² por 3 manos</p>
+          <p>{textoMemebranaPasta}</p>
+    
         </div>
 
         <div className={style.latexItem}>
@@ -45,9 +48,8 @@ function MembranaComponent() {
             <img className={style.imgLatex} src={img2} alt="Membrana líquida" />
           </div>
           <h3>Membrana líquida</h3>
-          <p>Membrana por 20 litros. Emulsiones acrílicas de alta calidad (protección UV) recomendada para lograr óptimos resultados en reparaciones de techos y muros.</p>
-          <p>Rendimiento: 25/30m² por 3 manos</p>
-          <p>La resistencia al agua se logra 48 horas después de su aplicación</p>
+          <p>{textoMembranaLiquida}</p>
+         
         </div>
       </div>
     </div>
