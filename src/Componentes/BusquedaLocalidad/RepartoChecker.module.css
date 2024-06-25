@@ -1,0 +1,51 @@
+.repartoCheckerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e1dddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .selectField {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+  }
+  
+  .searchButton {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .searchButton:hover {
+    background-color: #1ebe57;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  

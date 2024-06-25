@@ -1,0 +1,13 @@
+.carousel-container {
+    width: 80%;
+    height:80%; /* Altura completa de la ventana */
+    margin: auto;
+  
+  }
+  
+  .carousel-item img {
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    object-fit: contain; /* Mantiene la proporción de la imagen sin recortarla */
+  }

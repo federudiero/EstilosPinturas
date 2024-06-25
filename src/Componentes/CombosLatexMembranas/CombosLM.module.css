@@ -1,0 +1,133 @@
+.divContainerPadreCombos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.title {
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.divContainerCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+  max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.latexItem {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 450px; /* Ajustar según el contenido */
+  transition: transform 0.3s ease;
+}
+
+.latexItem:hover {
+  transform: translateY(-10px); /* Efecto de levantamiento al hacer hover */
+}
+
+.imgContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.imgLatex {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.PCombos {
+  color: #333;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.h3Combos {
+  color: #333;
+  font-weight: 600;
+  background-color: #d8b211;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Media Queries para hacer responsivo */
+
+/* Para dispositivos pequeños hasta 768px */
+@media (max-width: 768px) {
+  .divContainerCard {
+    grid-template-columns: 1fr; /* Cambiar a una sola columna en dispositivos pequeños */
+    gap: 10px;
+  }
+
+  .latexItem {
+    min-height: auto; /* Ajuste de altura automática en dispositivos más pequeños */
+  }
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .imgLatex {
+    height: 150px; /* Ajuste de altura de la imagen para pantallas muy pequeñas */
+  }
+}
+
+/* Para tabletas entre 769px y 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .divContainerCard {
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+  }
+
+  .latexItem {
+    min-height: 400px; /* Ajuste de altura para tabletas */
+  }
+
+  .imgLatex {
+    height: 180px; /* Ajuste de altura de la imagen para tabletas */
+  }
+}
+
+/* Para PCs de más de 1024px y dispositivos grandes como Galaxy Fold */
+@media (min-width: 1025px) {
+  .divContainerCard {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas para PCs */
+    gap: 20px;
+  }
+
+  .latexItem {
+    min-height: 450px; /* Ajustar según el contenido */
+  }
+
+  .imgLatex {
+    height: 200px; /* Ajuste de altura de la imagen para PCs */
+  }
+}
